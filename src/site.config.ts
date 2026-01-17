@@ -3,21 +3,21 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // [Basic]
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: 'Astro Theme Pure',
+  title: 'HBNU ACM',
   /** Will be used in index page & copyright declaration */
-  author: 'Pure Lab',
+  author: 'HBNU ACM 集训队',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: 'Stay hungry, stay foolish',
+  description: 'HBNU ACM 集训队主页',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.ico',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
   socialCard: '/images/social-card.png',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'en-US',
-    attrs: 'en_US',
+    lang: 'zh-CN',
+    attrs: 'zh-CN',
     // Date locale
-    dateLocale: 'en-US',
+    dateLocale: 'zh-CN',
     dateOptions: {
       day: 'numeric',
       month: 'short',
@@ -49,8 +49,6 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
-      { title: 'Projects', link: '/projects' },
       { title: 'Links', link: '/links' },
       { title: 'About', link: '/about' }
     ]
@@ -59,15 +57,15 @@ export const theme: ThemeUserConfig = {
   /** Configure the footer of your site. */
   footer: {
     // Year format
-    year: `© ${new Date().getFullYear()}`,
-    // year: `© 2019 - ${new Date().getFullYear()}`,
+    // year: `© ${new Date().getFullYear()}`,
+    year: `© 2025 - ${new Date().getFullYear()}`,
     links: [
       // Registration link
-      {
-        title: 'Moe ICP 114514',
-        link: 'https://icp.gov.moe/?keyword=114514',
-        style: 'text-sm' // Uno/TW CSS class
-      },
+      // {
+      //   title: 'Moe ICP 114514',
+      //   link: 'https://icp.gov.moe/?keyword=114514',
+      //   style: 'text-sm' // Uno/TW CSS class
+      // },
       // Privacy Policy link
       {
         title: 'Site Policy',
@@ -104,11 +102,11 @@ export const integ: IntegrationUserConfig = {
   links: {
     // Friend logbook
     logbook: [
-      { date: '2025-03-16', content: 'Is there a leakage?' },
-      { date: '2025-03-16', content: 'A leakage of what?' },
-      { date: '2025-03-16', content: 'I have a full seat of water, like, full of water!' },
-      { date: '2025-03-16', content: 'Must be the water.' },
-      { date: '2025-03-16', content: "Let's add that to the words of wisdom." }
+      // { date: '2025-03-16', content: 'Is there a leakage?' },
+      // { date: '2025-03-16', content: 'A leakage of what?' },
+      // { date: '2025-03-16', content: 'I have a full seat of water, like, full of water!' },
+      // { date: '2025-03-16', content: 'Must be the water.' },
+      // { date: '2025-03-16', content: "Let's add that to the words of wisdom." }
     ],
     // Yourself link info
     applyTip: [
@@ -159,7 +157,7 @@ export const integ: IntegrationUserConfig = {
   },
   // Comment system
   waline: {
-    enable: true,
+    enable: false,
     // Server service link
     server: 'https://astro-theme-pure-waline.arthals.ink/',
     // Show meta info for comments
