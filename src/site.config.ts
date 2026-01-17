@@ -15,7 +15,7 @@ export const theme: ThemeUserConfig = {
   /** Specify the default language for this site. */
   locale: {
     lang: 'zh-CN',
-    attrs: 'zh-CN',
+    attrs: 'zh_CN',
     // Date locale
     dateLocale: 'zh-CN',
     dateOptions: {
