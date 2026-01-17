@@ -3,6 +3,7 @@ import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
+import { Tabs, TabItem } from 'astro-pure/user';
 
 const headings = [
   { depth: 2, slug: 'what_we_do', text: 'What We Do?' },
@@ -91,42 +92,19 @@ const headings = [
 
   {/* members */}
   <h2 id='members'>Merbers</h2>
-  <p>历届成员:</p>
-  <table class="team-table">
-    <thead>
-      <tr>
-        <th>年级</th>
-        <th>姓名</th>
-      </tr>
-    </thead>
-      <tr>
-        <td>2023</td>
-        <td>孙紫阳</td>
-      </tr>
-      <tr>
-        <td>2022</td>
-        <td>华泰达</td>
-      </tr>
-    </tbody>
-  </table>
+  <Tabs>
+    <TabItem label="2025级">
+      杨笑韬 黄子君 胡恒恺
+    </TabItem>
+    <TabItem label="2024级">
+      胡玉灿 黄有阳 肖振顺 刘嘉豪 庞媛媛 谢俊悠 李永光 蔡贤军 黄瀚林
+    </TabItem>
+    <TabItem label="2023级">
+      孙紫阳 彭宇锐 邹涛 孙贇泽
+    </TabItem>
+    <TabItem label="2022级">
+      华泰达
+    </TabItem>
+  </Tabs>
 
-  <style>
-  .team-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1.5rem;
-  }
-
-  /* --- 修改在这里 --- */
-  .team-table th, .team-table td {
-    border: 1px solid #ccc;
-    /* 1. 增加内边距 (padding)，让单元格内部空间更大，看起来更宽 */
-    padding: 0.75rem 2rem; /* 原来是 0.5rem 1rem */
-    text-align: center;
-  }
-  
-  .team-table th {
-    background-color: #f2f2f2;
-  }
-</style>
 </PageLayout>
